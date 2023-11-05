@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.tittle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #00012a;
+    margin-block: 20px;
+}
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 10px 20px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(132, 132, 132, 0.285);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(64, 64, 64, 0.487);
+}
+.status div{
+    margin-inline: 30px;
+    color: #00012a;
+    font-size: 20px;
+}
+.status span{
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+}
+
+.box{
+    width: 60%;
+}
+.text_wrapper{
+    margin-block: 10px 20px;
+}
+#text_box{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(64, 64, 64, 0.487);
+    padding: 20px;
+}
+
+.scrambled_words div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#scrambled {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.words{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hash{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#asterisks{
+    display: flex;
+    width: 15%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.btn_redact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn_redact{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #0e3b7f, #004d7a, #038e9b, #00bf72, #0dac57);
+    font-size: 20px;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(64, 64, 64);
+}
+#btn_redact:hover{
+    background-image: none;
+    background-color: rgba(135, 92, 92, 0.358);
+    backdrop-filter: blur(8px);
+    color: #00012a;
+}
+.redactbox{
+    width: 100%;
+    height: 100%;
+}
+.redactedText{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(135, 92, 92, 0.358);
+    backdrop-filter: blur(8px);
+    font-size: 20px;
+    color: #00012a;
+    padding: 20px;
+    text-align: justify;
+    margin-block: 20px;
+}

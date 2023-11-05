@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Redactr</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="tittle">REDACT APP</h1>
+                <div class="status" id="status">
+                    <div class="scanned">Words Scanned : <span class="sn" id="sn">0</span></div>
+                    <div class="wordscrambed">Words Matched : <span class="wm" id="wm">0</span></div>
+                    <div class="charscrambed">Characters Scrambled : <span class="cs" id="cs">0</span></div>
+                </div>
+                <div class="box">
+                    <div class="text_wrapper">
+                        <textarea name="textarea" id="text_box" cols="30" rows="7" placeholder="Enter Your Text Here"></textarea>
+                    </div>
+                    <div class="scrambled_words">
+                        <div>
+                            <label for="scrambled" class="words">Words To Redact :</label>
+                            <input type="text" name="scrambled" id="scrambled" placeholder="Seperated By Comma">
+                        </div>
+                        <div>
+                            <label for="asterisks" class="hash">Replacement Hash/Text</label>
+                            <input type="text" name="asterisks" id="asterisks" placeholder="*">
+                        </div>
+                    </div>
+                    <div class="btn_redact">
+                        <button type="button" id="btn_redact">Redact Now</button>
+                    </div>
+                </div>
+                <div class="redactedText" id="redactedOutput"></div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
