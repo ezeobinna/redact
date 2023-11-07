@@ -43,7 +43,7 @@ buttonRedact.addEventListener('click', function () {
     document.getElementById("cs").innerHTML = `${characterScrambled}`;
 
 
-    document.getElementById("redactedOutput").textContent = redactedText;
+    document.getElementById("redactedOutput").innerHTML = `<div class="redactedText" id="redactedOutput">${redactedText}</div>`;
 });
 
 

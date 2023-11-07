@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 100vh;
+    height: 100%;
     border-radius: 10px;
     align-items: center;
 }
@@ -104,6 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 #btn_redact{
     width: 30%;
@@ -136,4 +137,68 @@
     padding: 20px;
     text-align: justify;
     margin-block: 20px;
+}
+
+/* phone devies */
+@media (max-width: 850px ) {
+    .container {
+            width: 80%;
+        }
+    .status div {
+        margin-inline: 20px;
+        font-size: 17px;
+    }
+    #btn_redact {
+        width: 30%;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+    .status {
+        margin-block: 0px 10px;
+        padding-block: 10px;
+    }
+    .status div {
+        margin-inline: 10px;
+        font-size: 10px;
+    }
+
+    .status span {
+        font-size: 10px;
+    }
+    .box {
+        width: 80%;
+    }
+    .scrambled_words div {
+        margin-bottom: 10px;
+    }
+    #scrambled {
+        width: 60%;
+        height: 20px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    .words {
+        font-size: 12px;
+    }
+    .hash {
+        font-size: 10px;
+    }
+    #asterisks {
+        width: 15%;
+        height: 15px;
+        margin-left: 10px;
+        padding-left: 15px;
+    }
+    #btn_redact {
+        width: 30%;
+        height: 40px;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 11px;
+    }
 }
