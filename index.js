@@ -3,7 +3,7 @@
 const buttonRedact = document.getElementById('btn_redact');
 
 
-
+// the 'redact now' click function.
 buttonRedact.addEventListener('click', function () {
     const wordsToScramble = document.getElementById("scrambled").value.split(/[\s,]+/);
     const textToRedact = document.getElementById("text_box").value;
@@ -14,7 +14,7 @@ buttonRedact.addEventListener('click', function () {
     let wordsScanned = 0;
     let wordsMatched = 0;
     let characterScrambled = 0;
-
+// Looping each word in the word to scramble input
     wordsToScramble.forEach((word) => {
         const regex = new RegExp(`\\b${word}\\b`, "gi");
         redactedText = redactedText.replace(regex, (match) => {
