@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    
     align-items: center;
     justify-content: center;
     background-color: #330000;
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 100%;
+    min-height: 100vh;
     border-radius: 10px;
     align-items: center;
 }
@@ -159,7 +159,7 @@
         width: 90%;
     }
     .status {
-        margin-block: 0px 10px;
+        margin-block: 10px 30px;
         padding-block: 10px;
     }
     .status div {
@@ -174,7 +174,7 @@
         width: 85%;
     }
     .scrambled_words div {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     #scrambled {
         width: 50%;
@@ -193,6 +193,9 @@
         height: 15px;
         margin-left: 10px;
         padding-left: 15px;
+    }
+    .btn_redact {
+        margin-block: 20px 30px;
     }
     #btn_redact {
         width: 30%;
